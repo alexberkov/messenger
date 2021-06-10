@@ -116,6 +116,22 @@ def send_message():
     }
     database.append(h)
 
+  if text == '/ask':
+    a = {
+      'name': 'Swish-bot',
+      'text': 'Ask me: ',
+      'time': time.time()
+    }
+    database.append(a)
+
+  if text == '/train':
+    t = {
+      'name': 'Swish-bot',
+      'text': 'Train me: ',
+      'time': time.time()
+    }
+    database.append(t)
+
   if text == '/count':
     c = {
       'name': 'Swish-bot',
